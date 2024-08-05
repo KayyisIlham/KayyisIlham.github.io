@@ -136,6 +136,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keyboard RGB</h4>
+                <img src="img/Keyboards/1.png" alt="Keyboard RGB" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keyboard Kayu</h4>
+                <img src="img/Keyboards/2.png" alt="Keyboard Kayu" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Pinky Boy</h4>
+                <img src="img/Keyboards/3.png" alt="Pinky Boy" class="keyboard-img" />
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -145,70 +179,6 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
-
-    <!-- Gallery -->
-    <section id="gallery">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Gallery</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/1.jpg" alt="gambar 1" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/2.jpg" alt="gambar 2" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/3.jpg" alt="gambar 3" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/4.jpg" alt="gambar 4" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/5.jpg" alt="gambar 5" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/6.jpg" alt="gambar 6" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/7.jpg" alt="gambar 7" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/8.jpg" alt="gambar 8" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/9.jpg" alt="gambar 9" class="img-fluid gallery-img" />
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="#">
-              <img src="img/Gallery/10.jpg" alt="gambar 10" class="img-fluid gallery-img" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -312,6 +282,15 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
